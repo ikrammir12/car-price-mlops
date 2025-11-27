@@ -5,3 +5,7 @@ Pandas
 scikit-learn 
 
 Matplotlib
+
+mlflow
+
+xgboost
