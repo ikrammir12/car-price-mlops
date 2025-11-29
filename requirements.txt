@@ -9,3 +9,13 @@ Matplotlib
 mlflow
 
 xgboost
+
+fastapi
+
+uvicorn
+
+joblib
+
+pydantic 
+
+uvicorn

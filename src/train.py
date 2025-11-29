@@ -8,6 +8,7 @@ from sklearn.preprocessing import OneHotEncoder
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 from xgboost import XGBRegressor 
+import joblib
 
 #1=Load Data
 # ... imports stay the same ...
@@ -96,3 +97,8 @@ with mlflow.start_run():
     mlflow.sklearn.log_model(model_pipeline,'model')
 
     print('Model and metrics logged to Mlflow !')
+
+
+    print("💾 Saving model to 'model.pkl' for deployment...")
+    joblib.dump(model_pipeline, 'model.pkl')
+    print("✅ Model saved successfully!")
